@@ -1,0 +1,126 @@
+
+# channelName: "performancemonitor"
+channelName: "zeperformancemonitor"
+
+orgDetails:
+  -
+    Name: Zoho Corp
+    Id: "635549222"
+    DC: ".com"
+    appId: "36064526"
+  -
+    Name: IF
+    Id: "716614501"
+    DC: ".com"
+    appId: "36064526"
+  -
+    Name: CL
+    Id: "704913685"
+    DC: ".com"
+    appId: "36064526"
+  -
+    Name: GP
+    Id: "714928174"
+    DC: ".com"
+    appId: "36064526"
+  -
+    Name: JK
+    Id: "60010862050"
+    DC: ".in"
+    appId: "40000000224"
+  -
+    Name: ML
+    Id: "60005298410"
+    DC: ".in"
+    appId: "40000000224"
+  
+  
+
+apiListforGetMethod:
+  -
+    API_EndPoint: "/api/v1/trips/editpage"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/expenses/editpage"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/expensereports/editpage"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/trips/(\\d+)"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/expenses/(\\d+)"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/expensereports/(\\d+)/approvalhistory"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/advancepayments/(\\d+)" 
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/autocomplete/"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/users/editpage"
+    threshold: 20000
+  
+
+
+
+apiListforPostMethod:
+  -
+    API_EndPoint: "/api/v1/trips"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/expenses"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/expensereports"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/advancepayments"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/expensereports/(\\d+)/submit"
+    threshold: 20000
+  -
+    API_EndPoint: "/api/v1/expensereports/(\\d+)/approve"
+    threshold: 20000
+  -
+    API_EndPoint: "api/v1/trips/(\\d+)/approve"
+    threshold: 20000
+  -
+    API_EndPoint: "api/v1/trips/(\\d+)/submit"
+    threshold: 20000
+
+apiListforPutMethod:
+  -
+    API_EndPoint: "/api/v1/expensereports/(\\d+)"
+    threshold: 20000
+  - 
+    API_EndPoint: "/api/v1/expenses/(\\d+)"
+    threshold: 20000 
+
+  
+
+paramforlogs(US):
+  'client_id': '1000.BK9QQ78DR4DSLZ1U69HYB0EWVP7S5Z'
+  'client_secret' : 'b49c7e8a8ad30407282003efcf1d85c6ca0904dcd0'
+  'redirect_uri' : 'https://notto.com'
+  'grant_type' : 'refresh_token'
+  'refresh_token' : '1000.681df6af2cc9701601c8f3e82f0842f8.b934dd914860e0dbce2bce1ae1abe7ef'
+
+paramforlogs(IN):
+  'client_id': '1000.8MWZAQLK9YWQZG2LATFHGATCTWH83P'
+  'client_secret' : '4886b00293af460320598da04266b13f6cec6bde4c'
+  'redirect_uri' : 'https://notto.in'
+  'grant_type' : 'refresh_token'
+  'refresh_token' : '1000.542915b336a74c4be6a69c5366c42ac3.5c0a870658a7c0b4bafa74a71403021f'
+
+paramforcliq:
+  'client_id': '1000.BK9QQ78DR4DSLZ1U69HYB0EWVP7S5Z'
+  'client_secret' : 'b49c7e8a8ad30407282003efcf1d85c6ca0904dcd0'
+  'redirect_uri' : 'https://notto.com'
+  'grant_type' : 'refresh_token'
+  'refresh_token' : '1000.12940cb33e153ba4c0fc6fd9a4442ce4.3f0943018275089193e5113410cc8bb0'
