@@ -1,0 +1,25 @@
+{{page-title "Grocery"}}
+<div class="container-fluid">
+ <Header @name="Grocery"/>
+ <div class="row ">
+        <Items @itemDetails={{array (hash img='/assets/images/gro6.jpg'
+                                   name="Tommato Rs.300"
+                                   id='Tommato')
+                            (hash img='/assets/images/gro2.jpeg'
+                                   name= 'Eggplant Rs.200'
+                                   id='Eggplant')
+                            (hash img= '/assets/images/gro3.jpeg'
+                                   name= 'Carrot Rs.50'
+                                   id="Carrot")
+                            (hash img='/assets/images/gro4.jpg'
+                                   name='Oil Rs.2000'
+                                   id='Oil')
+                            (hash img='/assets/images/gro5.jpg'
+                                   name='Powder Rs.140'
+                                   id='Powder')
+                            (hash img='/assets/images/gro1.jpeg'
+                                   name='Coffee Powder Rs.150' 
+                                   id='Coffee Powder') }} @parent="grocery" />
+    </div>
+</div>
+{{outlet}}

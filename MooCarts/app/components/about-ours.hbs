@@ -1,0 +1,10 @@
+
+{{#each this.abouts as |about|}}
+   <div class="col-3 mt-5  text-center box m-3 pt-5 bg-dark">
+        <h3>{{about.title}}</h3>
+        <p>{{about.body}}</p>
+   </div>
+{{/each}}
+
+
+{{yield}}

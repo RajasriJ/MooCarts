@@ -1,0 +1,10 @@
+
+{{#each this.Routes as |routes|}}
+  {{#if (logicalop this.user.isUser (eq routes.route "signin") "and")}}
+    <p class="col"><LinkTo  @route="user-profile" class="text-white"><i class='far fa-user-circle' style='font-size:30px'></i></LinkTo></p>
+  {{else}}
+     <p class="col {{if (eq routes.text "Signin")(concat "cls-" "modify")}}"><LinkTo  @route={{routes.route}}><p class="text-white h5">{{routes.text}}</p></LinkTo></p>
+  {{/if}}
+{{/each}}  
+
+{{yield}}

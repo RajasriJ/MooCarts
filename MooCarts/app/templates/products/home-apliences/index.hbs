@@ -1,0 +1,28 @@
+{{page-title "HomeAppliances"}}
+ 
+<div class="container-fluid">
+ <Header @name="Home Apliances"/>
+ <div class="row ">
+        <Items @itemDetails={{array (hash img='/assets/images/mobile.jpg'
+                                   name='Mobile Rs.30,000'
+                                   id='mobile')
+                            (hash img='/assets/images/airpods.jpeg'
+                                   name= 'Airpods Rs.2000'
+                                   id='airpods')
+                            (hash img= '/assets/images/lap.jpg'
+                                   name= 'Laptop Rs.50,000'
+                                   id="laptop")
+                            (hash img='/assets/images/speaker.jpg'
+                                   name='Speaker Rs.2000'
+                                   id='speaker')
+                            (hash img='/assets/images/fridge.jpeg'
+                                   name='Refridgerator Rs.14,000'
+                                   id='fridge')
+                            (hash img='/assets/images/powerbank.jpg'
+                                   name='PowerBank Rs.1500' 
+                                   id='powerbank') }}  @parent="home-apliences"/>
+    </div>
+      {{!-- {{this.user.isUser}} --}}
+</div>
+ 
+{{outlet}}

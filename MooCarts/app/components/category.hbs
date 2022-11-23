@@ -1,0 +1,16 @@
+{{#each this.CategoryDetails as |item|}}
+    <div class="col-4  mt-5 text-center">
+        <img src={{item.img}} alt="" class="img-thumbnail border border-dark">
+        <p class="pt-2 h5">{{item.name}}</p>
+        {{#if (eq item.name "Home Appliances")}}
+            <LinkTo @route="products.home-apliences"  class="col-6 btn btn-danger">View More</LinkTo>
+        {{else if (eq item.name "Daily Wears")}}
+            <LinkTo @route="products.daily-wears"  class="col-6 btn btn-danger">View More</LinkTo>
+        {{else}}
+            <LinkTo @route="products.grocery"  class="col-6 btn btn-danger">View More</LinkTo>
+        {{/if}}
+    </div>
+{{/each}}
+{{!-- {{this.user.isUser}} --}}
+
+{{yield}}
