@@ -1,0 +1,9 @@
+
+ <form action="/" >
+            <Input @type="text" placeholder="Enter your Name" class="col-12 mt-5" @value={{this.name}}/>
+            <Input @type="password" placeholder="Enter Your Password" class="col-12 mt-5" @value={{this.password}}/>
+            <LinkTo  @route={{this.route}}><button class="col-12 btn btn-lg btn-danger mt-5" type="submit" {{on "click" this.check}}>Submit</button></LinkTo>
+            <p class="col-12 mt-5 text-center h5">Dont't have an account?<a href="/signup" class="text-muted btn h5">SignUp</a></p>
+</form>
+
+{{yield}}

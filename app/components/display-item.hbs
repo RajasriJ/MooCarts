@@ -1,0 +1,18 @@
+{{#each @itemDetails as |item|}}
+    <Header @name={{item.name}}/>
+
+    <div class="row ">
+            <h4 class=" col-12 text-center">{{item.name}}</h4>
+            <img  class="col-4" src={{item.img}} alt="">
+            <p class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repudiandae enim modi eligendi inventore laudantium eos impedit qui suscipit,
+                neque repellendus reprehenderit. Quia, libero. Molestiae, quasi corporis! Vel, inventore? Velit,asperiores.
+                <LinkTo @route="card-form"><button class=" col-4 btn btn-danger mt-5" type="button">Add Card Details</button></LinkTo>
+                <LinkTo @route="success"><button class=" col-4 btn btn-danger mt-5" type="button">CashOn Delivery</button></LinkTo>
+                
+            </p>
+    </div>
+{{/each}}
+
+
+{{yield}}

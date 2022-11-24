@@ -1,0 +1,11 @@
+{{page-title "CardForm"}}
+<Header  @name="Card-Details" />
+<div class="container">
+    <Input @type="text" placeholder="Enter your Name" class="col-12 mt-5" @value={{this.name}}/>
+    <Input @type="email" placeholder="Enter card Number" class="col-12 mt-5"  @value={{this.email}}/>
+    <Input @type="password" placeholder="Enter Your Password" class="col-12 mt-5"  @value={{this.password}} />
+    <Input @type="password" placeholder="Re-Enter Your Password" class="col-12 mt-5" @value={{this.repassword}} {{on "input" this.validate}} />
+    <LinkTo  @route="success"><button class="col-12 btn btn-lg btn-danger mt-5" type="submit" {{on "click" this.add}}>Submit and Place Order</button></LinkTo>
+</div>
+
+{{outlet}}

@@ -1,0 +1,18 @@
+
+ <div class="container">
+            {{!-- <h2>Enter your Name:</h2><h3>{{this.user.items.name}}</h3>
+            <Input type="text" placeholder="Enter your Name" class="col-12 mt-5" @value="Rajasri" />
+            <Input type="text" placeholder="Enter Your Email" class="col-12 mt-5"  @value="rajinimy290902@gmail.com" />
+            <Input type="password" placeholder="Enter Your Password" class="col-12 mt-5"  @value="Rajasri@290902" />
+            <Input type="password" placeholder="Re-Enter Your Password" class="col-12 mt-5" @value="Rajasri@290902" /> --}}
+            <p class="col-12 text-center"><img src="/assets/images/user.png" alt=""></p>
+            <h2 class="col-12 text-center">Your Name</h2>
+            <h2 class="col-12 text-center">Your Email</h2>
+            <h2 class="col-12 text-center">Your Password</h2>
+            <h2 class="col-12 text-center">Customer No</h2>
+
+            <LinkTo  @route="index"><button class="col-12 btn btn-lg btn-danger mt-5" type="submit" {{on "click" this.remove}}>LogOut</button></LinkTo>
+</div>
+
+
+{{yield}}

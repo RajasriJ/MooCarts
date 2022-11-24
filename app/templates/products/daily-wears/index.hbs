@@ -1,0 +1,31 @@
+{{page-title "DailyWears"}}
+<div class="container-fluid">
+ <Header @name="Daily Wears"/>
+ <div class="row ">
+        <Items @itemDetails={{array (hash img='/assets/images/dress1.jpeg'
+                                   name="Babydoll dress"
+                                   Rs="30000"
+                                   id='Babydoll dress')
+                            (hash img='/assets/images/dress2.jpg'
+                                   name= 'Wrap around'
+                                    Rs='2000'
+                                   id='Wrap around')
+                            (hash img= '/assets/images/dress3.jpeg'
+                                   name= 'Kimono'
+                                    Rs='50000'
+                                   id="Kimono")
+                            (hash img='/assets/images/dress4.jpeg'
+                                   name='Bubble dress'
+                                   Rs='2000'
+                                   id='Bubble dress')
+                            (hash img='/assets/images/dress5.jpeg'
+                                   name='Polo dress'
+                                    Rs='1500' 
+                                   id='Polo dress') 
+                            (hash img='/assets/images/dress6.jpg'
+                                   name='Tutu Dressr'
+                                    Rs='14000'
+                                   id='Tutu Dress')}} @parent="daily-wears"/>
+    </div>
+</div>
+{{outlet}}

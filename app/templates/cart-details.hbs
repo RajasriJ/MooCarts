@@ -1,0 +1,14 @@
+{{page-title "CartDetails"}}
+<Header @name="Your Cart Items" />
+<div class="col-4  mt-5 text-center">
+        {{#each this.user.ItemDetails as |item|}}
+        <h3>{{item.name}}</h3>
+        <img src={{item.img}} alt="" class="img-thumbnail border border-dark">
+        <p class="pt-2 h5">{{item.name}}</p>
+        <button class="btn btn-success" type="button" {{on "click" (fn this.remove this.user.ItemDetails)}}>Remove</button>
+        <p {{remove-when this.isClick}}></p>
+        {{/each}}
+        {{this.isClick}}
+</div>
+
+{{outlet}}

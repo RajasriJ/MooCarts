@@ -1,0 +1,10 @@
+
+{{#each @itemDetails as |item|}}
+    <div class="col-4  mt-5 text-center">
+        <img src={{item.img}} alt="" class="img-thumbnail border border-dark">
+        <p class="pt-2 h5">{{item.name}}  Rs.{{item.Rs}}</p>
+        <button class="btn btn-success" type="button" {{on "click" (fn this.validate (hash name=item.name img=item.img Rs=item.Rs))}} >Add to Cart</button>
+       <LinkTo @route="products.{{@parent}}.item" @model={{item.id}}><button class="btn btn-danger" type="button">Shop Now</button></LinkTo>
+    </div>
+{{/each}}
+{{yield}}

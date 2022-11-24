@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+    height: 890px;
+    
+}
+
+.msg{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.side1{
+    padding: 300px;
+}
+
+.img-thumbnail{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    color: white;
+    background-color: black;
+}
+
+.col-12{
+    padding: 10px;
+}
+
+
